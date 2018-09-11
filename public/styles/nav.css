@@ -4,7 +4,7 @@
   position: fixed;
   background-color: #00a087;
   padding: 0px 2em;
-  top: 0px;
+  margin: 0px;
 }
 
 #nav-bar .header {

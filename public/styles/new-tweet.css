@@ -26,3 +26,7 @@ main.container .new-tweet textarea {
 main.container .new-tweet form {
   margin-bottom: 10px;
 }
+
+.red {
+  color: red;
+}

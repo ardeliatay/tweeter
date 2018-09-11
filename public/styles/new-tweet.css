@@ -1,20 +1,21 @@
 main.container .new-tweet h2 {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid gray;
 }
 
 
 main.container .new-tweet {
   flex-direction: column;  /* make main axis vertical *//* center items vertically, in this case */
-  background-color: #eee;
+  background-color: #DBF3FA;
   margin: auto;
   width: 100%;
   padding: 0px 10px 0px 10px;
-  border-radius: 10px;
+  border-radius: 8px;
   border: 0.5px solid lightgray;
 }
 
 main.container .new-tweet .counter {
   float: right;
+  font-style: italic;
 }
 
 main.container .new-tweet textarea {

@@ -81,10 +81,31 @@ function createTweetElement(tweet) {
   $user.append($handle);
   $tweet.append($content);
   $tweet.append($footer)
-  $footer.append($time, `<a href="#" class="material-icons">repeat</a>`, `<a href="#" class="material-icons">favorite</a>`, `<a href="#" class="material-icons">assistant_photo</a>`);
+  $footer.append($time);
+  $time.append(`<a href="#" class="material-icons">repeat</a>`, `<a href="#" class="material-icons">favorite</a>`, `<a href="#" class="material-icons">assistant_photo</a>`);
   return $tweet;
   }
   renderTweets(data);
+
+
+
+$('form#formID').on('submit', function (event) {
+  event.preventDefault();
+  //Grab content of the form
+  let formData = $('form#formID').serialize();
+  //Submit using ajax
+    $.ajax('/tweets/', {
+      method: 'POST',
+      data: formData
+}).then(function() {
+  //Clears the form
+  $('textarea').val('');
+  $('#all-tweets').empty();
+  return $.ajax('/tweets/');
+}).then(renderTweets);
+})
+
+
 });
 
 

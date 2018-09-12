@@ -67,22 +67,21 @@ function renderTweets(tweetArray) {
 function createTweetElement(tweet) {
   let $tweet = $('<article>').addClass('tweet');
   let $user = $ ('<header>').addClass('user');
-  let $name = $('<h2>').addClass('name');
-  let $handle = $('<p>').addClass('handle');
-  let $avatars = $('<img>').addClass('avatars');
-  let $content = $('<p>').addClass('content');
+  let $name = $('<h2>').addClass('name').text(tweet.user.name);
+  let $handle = $('<p>').addClass('handle').text(tweet.user.handle);
+  let $avatars = $('<img>').addClass('avatars').attr("src", tweet.user.avatars.small);
+  let $content = $('<p>').addClass('content').text(tweet.content.text);
   let $footer = $('<footer>').addClass('tweet-footer');
-  let $time = $('<p>').addClass('created_at');
-  let $icons = $('<a>').addClass('material-icons');
-  //...
+  let $time = $('<p>').addClass('created_at').text(tweet.created_at);
+
+
   $tweet.append($user);
+  $user.append($avatars);
   $user.append($name);
   $user.append($handle);
-  $user.append($avatars);
   $tweet.append($content);
   $tweet.append($footer)
-  $footer.append($time);
-  $footer.append($icons);
+  $footer.append($time, `<a href="#" class="material-icons">repeat</a>`, `<a href="#" class="material-icons">favorite</a>`, `<a href="#" class="material-icons">assistant_photo</a>`);
   return $tweet;
   }
   renderTweets(data);

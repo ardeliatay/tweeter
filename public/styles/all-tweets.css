@@ -1,6 +1,7 @@
 article.tweet {
   border: 0.5px solid lightgray;
   border-radius: 8px;
+  margin-top: 30px;
 }
 
 .tweet:hover {
@@ -48,14 +49,13 @@ p.content {
   margin-left: 10px;
 }
 
-footer p a.material-icons {
+a.material-icons {
   display: none;
   float: right;
   font-size:20px;
   color: gray;
-  margin: 0 8px 0 0;
 }
 
-.tweet:hover p a.material-icons {
+.tweet:hover a.material-icons {
   display: inline-block;
 }

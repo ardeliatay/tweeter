@@ -7,7 +7,7 @@ article.tweet {
   box-shadow: 10px 10px 5px grey;
 }
 
-article.tweet header {
+article.tweet header.user {
   background-color: #DBF3FA;
   display: flex;
   padding: 10px 10px 10px 0;
@@ -17,32 +17,45 @@ article.tweet header {
   justify-content: space-around;
 }
 
-article.tweet header p {
+article.tweet header p.handle {
   margin-top: 0px;
 }
 
-.tweeter-img {
+.avatars {
   float: left;
   height: 60px;
   width: 60px;
   border-radius: 8px;
 }
 
-article.tweet header h2{
+article.tweet header h2.name{
   margin-top: 0;
   float: left;
 }
 
-div.content {
+p.content {
   margin-left: 10px;
   min-height: 60px;
   padding: 20px;
 }
 
-article.tweet footer {
+.tweet footer.tweet-footer {
   border-top: 0.5px solid lightgray;
   font-size: 10px;
 }
-article.tweet footer p {
+
+.tweet footer .created_at {
   margin-left: 10px;
+}
+
+footer p a.material-icons {
+  display: none;
+  float: right;
+  font-size:20px;
+  color: gray;
+  margin: 0 8px 0 0;
+}
+
+.tweet:hover p a.material-icons {
+  display: inline-block;
 }

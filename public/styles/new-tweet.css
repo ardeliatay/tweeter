@@ -11,6 +11,7 @@ main.container .new-tweet {
   padding: 0px 10px 0px 10px;
   border-radius: 8px;
   border: 0.5px solid lightgray;
+  margin-bottom: 20px;
 }
 
 main.container .new-tweet .counter {

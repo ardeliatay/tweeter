@@ -36,28 +36,13 @@
     <main class="container">
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
-        <form method="POST" action="/tweets">
+        <form method="POST" action="/tweets" id="formID">
           <textarea name="text" placeholder="What are you humming about?"></textarea>
           <input type="submit" value="Tweet">
           <span class="counter">140</span>
         </form>
       </section>
       <section id="all-tweets">
-        <article class="tweet">
-          <header class="user">
-            <img class="avatars" src="/images/dwight.jpg">
-            <h2 class="name">Dwight Schrute</h2>
-            <p class="handle">@schrutefarms</p>
-          </header>
-          <p class="content">Hi</p>
-          <footer class="tweet-footer">
-            <p class="created_at">10 days ago
-            <a href="#" class="material-icons">repeat</a>
-            <a href="#" class="material-icons">favorite</a>
-            <a href="#" class="material-icons">assistant_photo</a>
-            </p>
-          </footer>
-        </article>
       </section>
 
     </main>

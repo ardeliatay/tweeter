@@ -81,7 +81,6 @@ $(function() {
       $time.append(`<a href="#" class="material-icons">repeat</a>`, `<a href="#" class="material-icons">favorite</a>`, `<a href="#" class="material-icons">assistant_photo</a>`);
       return $tweet;
     }
-    // renderTweets(data);
 
 
 
@@ -91,15 +90,22 @@ $(function() {
       let formData = $('form#formID').serialize();
       let textBox = $('textarea').val();
       //Submit using ajax
+      if (textBox === '') {
+        alert('Enter a tweet!');
+      } else if (textBox.length > 140) {
+        alert('Tweet is too long!')
+      } else {
       $.ajax('/tweets/', {
-        method: 'POST',
-        data: formData
+      method: 'POST',
+      data: formData
       }).then(function() {
       //Clears the form
       $('textarea').val('');
+      $('.counter').text(140);
       $('#all-tweets').empty();
       return $.ajax('/tweets/');
       }).then(renderTweets);
+    }
   })
 
     function loadTweets() {

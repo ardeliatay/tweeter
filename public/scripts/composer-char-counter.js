@@ -1,5 +1,5 @@
 $(function() {
-  $('textarea').on('keyup change', function() {
+  $('textarea').on('keyup', function() {
     let maxCharacters = 140;
     let characters = this.value.length
     let counter = $(this).siblings('.counter');

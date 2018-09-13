@@ -53,10 +53,13 @@
 
 
 $(function() {
-
+    $('.error-null').hide();
+    $('.error-exceed').hide();
     $('.new-tweet').hide();
+
     $('.button').on('click', function() {
         $('.new-tweet').slideToggle('slow');
+        $("textarea").focus();
       });
 
 
@@ -88,7 +91,8 @@ $(function() {
       return $tweet;
     }
 
-
+    $('.error-null').hide();
+    $('.error-exceed').hide();
 
     $('form#formID').on('submit', function (event) {
       event.preventDefault();
@@ -97,10 +101,14 @@ $(function() {
       let textBox = $('textarea').val();
       //Submit using ajax
       if (textBox === '') {
-        alert('Enter a tweet!');
+        $('.error-exceed').hide();
+        $('.error-null').slideDown()
       } else if (textBox.length > 140) {
-        alert('Tweet is too long!')
+        $('.error-null').hide();
+        $('.error-exceed').slideDown()
       } else {
+        $('.error-null').slideUp();
+        $('.error-exceed').slideUp();
         $.ajax('/tweets/', {
         method: 'POST',
         data: formData

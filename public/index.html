@@ -39,8 +39,12 @@
         <h2>Compose Tweet</h2>
         <form method="POST" action="/tweets" id="formID">
           <textarea name="text" placeholder="What are you humming about?"></textarea>
-          <input type="submit" value="Tweet">
+          <input class="submit-tweet" type="submit" value="Tweet">
           <span class="counter">140</span>
+          <span class="errors">
+            <div class=error-null>Say something!</div>
+            <div class=error-exceed>Exceeded word limit</div>
+          </span>
         </form>
       </section>
       <section id="all-tweets">

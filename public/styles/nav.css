@@ -23,9 +23,9 @@
 
 #nav-bar .button {
   float: right;
-  margin-top: 15px;
+  margin-top: 18px;
   border-radius: 8px;
-  padding: 10px 20px;
+  padding: 8px 15px;
   font-size: 20px;
   border: 0.5px solid lightgray;
 }

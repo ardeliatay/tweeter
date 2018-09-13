@@ -31,3 +31,24 @@ main.container .new-tweet form {
 .red {
   color: red;
 }
+
+
+div.error-null {
+  color: #D8000C;
+  background-color: #FFD2D2;
+  display: inline-block;
+  float: right;
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+div.error-exceed {
+  color: #D8000C;
+  background-color: #FFD2D2;
+  display: inline-block;
+  float: right;
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 8px;
+}

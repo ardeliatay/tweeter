@@ -57,7 +57,7 @@ $(function() {
     function renderTweets(tweetArray) {
       tweetArray.forEach (function(tweet) {
       var $tweet = createTweetElement(tweet);
-      $('#all-tweets').append($tweet);
+      $('#all-tweets').prepend($tweet);
       });
     };
 
@@ -95,18 +95,18 @@ $(function() {
       } else if (textBox.length > 140) {
         alert('Tweet is too long!')
       } else {
-      $.ajax('/tweets/', {
-      method: 'POST',
-      data: formData
-      }).then(function() {
-      //Clears the form
-      $('textarea').val('');
-      $('.counter').text(140);
-      $('#all-tweets').empty();
-      return $.ajax('/tweets/');
-      }).then(renderTweets);
-    }
-  })
+        $.ajax('/tweets/', {
+        method: 'POST',
+        data: formData
+        }).then(function() {
+        //Clears the form
+        $('textarea').val('');
+        $('.counter').text(140);
+        $('#all-tweets').empty();
+        return $.ajax('/tweets/');
+        }).then(renderTweets);
+      }
+    })
 
     function loadTweets() {
       $.ajax('/tweets', {

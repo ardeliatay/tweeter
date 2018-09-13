@@ -54,6 +54,12 @@
 
 $(function() {
 
+    $('.new-tweet').hide();
+    $('.button').on('click', function() {
+        $('.new-tweet').slideToggle('slow');
+      });
+
+
     function renderTweets(tweetArray) {
       tweetArray.forEach (function(tweet) {
       var $tweet = createTweetElement(tweet);

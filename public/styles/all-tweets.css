@@ -1,53 +1,59 @@
+/*Main tweets container styling*/
+
 article.tweet {
   border: 0.5px solid lightgray;
-  border-radius: 8px;
+  border-radius: 5px;
   margin-top: 30px;
 }
 
-.tweet:hover {
+article.tweet:hover {
   box-shadow: 10px 10px 5px grey;
 }
 
-article.tweet header.user {
+header.user {
   background-color: #DBF3FA;
   padding: 10px;
   height: 80px;
-  border-top-right-radius: 8px;
-  border-top-left-radius: 8px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
   border: 0.5px solid lightgray;
 }
 
-article.tweet header p.handle {
+p.handle {
   margin-top: 0px;
   float: right;
-  margin-left: 20px;
+  margin-left: 10px;
+  font-size: 18px;
 }
 
-.avatars {
+img.avatars {
   float: left;
   height: 60px;
   width: 60px;
-  border-radius: 8px;
+  border-radius: 5px;
 }
 
-article.tweet header h2.name{
+h2.name{
   margin-top: 0;
   margin-left: 10px;
   float: left;
+  font-size: 28px;
 }
 
 p.content {
   margin-left: 10px;
   min-height: 60px;
   padding: 10px;
+  font-size: 20px;
+  word-wrap: break-word;
 }
 
-.tweet footer.tweet-footer {
+footer.tweet-footer {
   border-top: 0.5px solid lightgray;
-  font-size: 10px;
+  font-size: 12px;
 }
 
-.tweet footer .created_at {
+footer .created_at {
   margin-left: 10px;
 }
 

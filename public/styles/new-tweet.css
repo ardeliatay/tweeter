@@ -1,37 +1,35 @@
+/*Compose new tweet container styling*/
+
 main.container .new-tweet h2 {
   border-bottom: 1px solid gray;
 }
 
-
 main.container .new-tweet {
-  flex-direction: column;  /* make main axis vertical *//* center items vertically, in this case */
   background-color: #DBF3FA;
   margin: auto;
-  width: 100%;
   padding: 0px 10px 0px 10px;
-  border-radius: 8px;
+  border-radius: 5px;
   border: 0.5px solid lightgray;
   margin-bottom: 20px;
 }
 
-main.container .new-tweet .counter {
+main.container .counter {
   float: right;
   font-style: italic;
 }
 
-main.container .new-tweet textarea {
+main.container textarea {
   width: 100%;
   padding: 5px;
 }
 
-main.container .new-tweet form {
+main.container form {
   margin-bottom: 10px;
 }
 
 .red {
   color: red;
 }
-
 
 div.error-null {
   color: #D8000C;
@@ -40,7 +38,7 @@ div.error-null {
   float: right;
   margin-right: 10px;
   padding: 5px;
-  border-radius: 8px;
+  border-radius: 5px;
 }
 
 div.error-exceed {
@@ -50,5 +48,5 @@ div.error-exceed {
   float: right;
   margin-right: 10px;
   padding: 5px;
-  border-radius: 8px;
+  border-radius: 5px;
 }

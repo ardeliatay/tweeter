@@ -3,12 +3,13 @@ $(function() {
     $('.error-exceed').hide();
     $('.new-tweet').hide();
 
+    //New tweet form slides down when compose button is clicked
     $('.button').on('click', function() {
-        $('.new-tweet').slideToggle('slow');
-        $("textarea").focus();
-      });
+      $('.new-tweet').slideToggle('slow');
+      $("textarea").focus();
+    });
 
-
+    //Takes in array of tweet objects and append each one to tweets container
     function renderTweets(tweetArray) {
       tweetArray.forEach (function(tweet) {
       var $tweet = createTweetElement(tweet);
@@ -16,6 +17,7 @@ $(function() {
       });
     };
 
+    //Takes in a tweet object and returns a tweet <article> element
     function createTweetElement(tweet) {
       let $tweet = $('<article>').addClass('tweet');
       let $user = $ ('<header>').addClass('user');
@@ -35,17 +37,13 @@ $(function() {
       $footer.append($time);
       $time.append(`<a href="#" class="material-icons">repeat</a>`, `<a href="#" class="material-icons">favorite</a>`, `<a href="#" class="material-icons">assistant_photo</a>`);
       return $tweet;
-    }
-
-    $('.error-null').hide();
-    $('.error-exceed').hide();
+    };
 
     $('form#formID').on('submit', function (event) {
       event.preventDefault();
       //Grab content of the form
       let formData = $('form#formID').serialize();
       let textBox = $('textarea').val();
-      //Submit using ajax
       if (textBox === '') {
         $('.error-exceed').hide();
         $('.error-null').slideDown()
@@ -55,18 +53,19 @@ $(function() {
       } else {
         $('.error-null').slideUp();
         $('.error-exceed').slideUp();
+        //If input passes validation, submit using ajax
         $.ajax('/tweets/', {
-        method: 'POST',
-        data: formData
+          method: 'POST',
+          data: formData
         }).then(function() {
-        //Clears the form
-        $('textarea').val('');
-        $('.counter').text(140);
-        $('#all-tweets').empty();
-        return $.ajax('/tweets/');
+          //Clear the form
+          $('textarea').val('');
+          $('.counter').text(140);
+          $('#all-tweets').empty();
+          return $.ajax('/tweets/');
         }).then(renderTweets);
-      }
-    })
+      };
+    });
 
     function loadTweets() {
       $.ajax('/tweets', {
@@ -75,10 +74,10 @@ $(function() {
           console.log('success', data)
           renderTweets(data)
         }
-      })
-    }
-loadTweets();
+      });
+    };
 
+loadTweets();
 
 });
 

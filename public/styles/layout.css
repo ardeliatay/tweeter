@@ -23,3 +23,24 @@ main.container {
   padding: 2em 2em 0px 2em;
   border: 1px solid lightgray;
 }
+
+@media (max-width: 600px) {
+    nav#nav-bar .header {
+      font-size: 2em;
+    }
+    nav#nav-bar {
+      height: 3em;
+    }
+    nav#nav-bar .logo {
+      height: 2em;
+      width: 2em;
+    }
+    nav#nav-bar .button {
+      height: 1.8em;
+      width: 1.8em;
+      margin-top: 0px;
+    }
+    main.container {
+      width: 90%;
+    }
+}

@@ -5,7 +5,7 @@
   width: 100%;
   position: fixed;
   background-color: #FECF4E;
-  padding: 0px 2em;
+  padding: 5px 2em 0 3em;
   border-bottom: 1px solid lightgray;
 }
 
@@ -19,9 +19,13 @@
 }
 
 #nav-bar .logo {
-  height: 120px;
-  width: 120px;
+  height: 90px;
+  width: 90px;
   float: left;
+}
+
+#nav-bar .logo:hover {
+  transform: scale(1.2);
 }
 
 #nav-bar .button {
@@ -31,10 +35,10 @@
   border-radius: 5px;
   font-size: 20px;
   border: 0.5px solid lightgray;
-  color: gray;
+  color: #865F2C;
 }
 
 
 #nav-bar .button:hover {
-  transform: scale(1.2);
+  box-shadow: 10px 10px 5px grey;
 }

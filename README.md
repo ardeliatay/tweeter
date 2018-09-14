@@ -1,5 +1,10 @@
 # Tweeter Project
 
+The Office S8E20
+"I wonder if king size sheets are called presidential sized in England. I really should have a tweeter account." -Dwight Schrute
+
+Well..Dwight finally got his tweeter account.
+
 Tweeter is a simple, single-page Twitter clone.  It was built with HTML, CSS, JS, JQuery and AJAX on the client-side, and Node, Express, and MongoDB on the server-side.  Happy tweeting!
 
 

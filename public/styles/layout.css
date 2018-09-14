@@ -9,9 +9,10 @@ html {
 
 body {
   margin: 0;
-  color: #244751;
-  background-image: url("/images/diagonal.gif");
+  background-image: url("/images/beet6.png");
+  background-size: 8%;
   font-family: 'Josefin Slab', serif;
+  color: #865F2C;
   display: flex;
 }
 

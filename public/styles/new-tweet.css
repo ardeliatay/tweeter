@@ -7,10 +7,9 @@ main.container .new-tweet h2 {
 main.container .new-tweet {
   background-color: #F4E7B1;
   margin: auto;
-  padding: 0px 10px 0px 10px;
+  padding: 0em 1em 0em 1em;
   border-radius: 5px;
   border: 0.5px solid lightgray;
-  margin-bottom: 20px;
 }
 
 main.container .counter {
@@ -20,11 +19,11 @@ main.container .counter {
 
 main.container textarea {
   width: 100%;
-  padding: 5px;
+  padding: 0.5em;
 }
 
 main.container form {
-  margin-bottom: 10px;
+  margin-bottom: 0.2em;
 }
 
 .red {
@@ -36,9 +35,10 @@ div.error-null {
   background-color: #FFD2D2;
   display: inline-block;
   float: right;
-  margin-right: 10px;
-  padding: 5px;
+  margin-right: 1em;
+  padding: 0.5em;
   border-radius: 5px;
+  font-size: 0.8em;
 }
 
 div.error-exceed {
@@ -46,7 +46,8 @@ div.error-exceed {
   background-color: #FFD2D2;
   display: inline-block;
   float: right;
-  margin-right: 10px;
-  padding: 5px;
+  margin-right: 1em;
+  padding: 0.5em;
   border-radius: 5px;
+  font-size: 0.8em;
 }

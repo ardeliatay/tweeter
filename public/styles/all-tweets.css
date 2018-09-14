@@ -3,64 +3,66 @@
 article.tweet {
   border: 0.5px solid lightgray;
   border-radius: 5px;
-  margin-top: 30px;
+  margin-top: 2em;
 }
 
 article.tweet:hover {
-  box-shadow: 10px 10px 5px grey;
+  box-shadow: 1em 1em 0.5em grey;
 }
 
 header.user {
   background-color: #F4E7B1;
-  padding: 10px;
-  height: 80px;
+  padding: 0.5em;
+  height: 15vh;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   border: 0.5px solid lightgray;
 }
 
 p.handle {
-  margin-top: 0px;
+  margin-top: 0em;
   float: right;
-  margin-left: 10px;
-  font-size: 18px;
+  margin-left: 0.2em;
+  font-size: 1em;
 }
 
 img.avatars {
   float: left;
-  height: 60px;
-  width: 60px;
+  max-height: 4em;
+  min-height: 4em;
+  max-width: 4em;
+  min-width: 4em;
   border-radius: 5px;
 }
 
 h2.name{
   margin-top: 0;
-  margin-left: 10px;
+  margin-left: 0.5em;
   float: left;
-  font-size: 28px;
+  font-size: 1.5em;
 }
 
 p.content {
-  margin-left: 10px;
-  min-height: 60px;
-  padding: 10px;
-  font-size: 20px;
+  margin-left: 1em;
+  min-height: 4em;
+  padding: 1em;
+  font-size: 1.2em;
   word-wrap: break-word;
 }
 
 footer.tweet-footer {
   border-top: 0.5px solid lightgray;
-  font-size: 12px;
+  font-size: 0.8em;
 }
 
 footer .created_at {
-  margin-left: 10px;
+  margin-left: 1em;
 }
 
 a.material-icons {
   display: none;
   float: right;
-  font-size:20px;
+  font-size: 2em;
   color: gray;
 }
 

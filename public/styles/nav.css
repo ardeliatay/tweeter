@@ -41,5 +41,6 @@
 }
 
 #nav-bar .button:hover {
-  box-shadow: 0.5em 0.5em 0.2em grey;
+  box-shadow: 0.2em 0.2em 0.2em #C0A18A;
+  transition: box-shadow 1s;
 }

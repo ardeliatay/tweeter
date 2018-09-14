@@ -26,7 +26,7 @@ $(function() {
       let $avatars = $('<img>').addClass('avatars').attr("src", tweet.user.avatars.small);
       let $content = $('<p>').addClass('content').text(tweet.content.text);
       let $footer = $('<footer>').addClass('tweet-footer');
-      let $time = $('<p>').addClass('created_at').text(tweet.created_at);
+      let $time = $('<p>').addClass('created_at').text(moment(tweet.created_at).fromNow());
 
       $tweet.append($user);
       $user.append($avatars);

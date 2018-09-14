@@ -24,7 +24,7 @@ main.container {
   border: 1px solid lightgray;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     nav#nav-bar .header {
       font-size: 2em;
     }
@@ -42,5 +42,15 @@ main.container {
     }
     main.container {
       width: 90%;
+    }
+    header.user h2.name {
+      font-size: 2em;
+    }
+    header.user p.handle {
+      font-size: 1em;
+    }
+    header.user img.avatars {
+      height: 2em;
+      width: 2em;
     }
 }

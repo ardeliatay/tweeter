@@ -29,3 +29,8 @@ Tweeter is a simple, single-page Twitter clone.  It was built with HTML, CSS, JS
 ⇒ Md5
 
 ⇒ Mongodb
+
+## Final Product
+
+!["Screenshot of the main Tweeter page."](https://github.com/ardeliatay/tweeter/blob/master/public/images/tweeter-main.png?raw=true)
+!["Screenshot of the drop down tweet box showing an error message."](https://github.com/ardeliatay/tweeter/blob/master/public/images/tweet-box.png?raw=true)

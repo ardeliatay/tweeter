@@ -24,7 +24,8 @@ main.container {
   border: 1px solid lightgray;
 }
 
-@media (max-width: 800px) {
+/*Responsive web design for screens smaller than 650px*/
+@media (max-width: 650px) {
     nav#nav-bar .header {
       font-size: 2em;
     }
@@ -44,7 +45,7 @@ main.container {
       width: 90%;
     }
     header.user h2.name {
-      font-size: 2em;
+      font-size: 1.5em;
     }
     header.user p.handle {
       font-size: 1em;
